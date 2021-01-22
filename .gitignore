@@ -6,6 +6,10 @@
 # Prerequisites
 *.d
 
+### Custom ###
+Prince Of Persia.tlog/*
+Debug
+
 # Compiled Object files
 *.slo
 *.lo

@@ -137,5 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="zlib1.dll" />
+    <None Include="dll\freeglut.dll" />
+    <None Include="dll\fmod.dll" />
+    <None Include="dll\fmodL.dll" />
+    <None Include="dll\glew32.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\Simple OpenGL Image Library\projects\VC9\Debug\SOIL.lib" />
   </ItemGroup>
 </Project>

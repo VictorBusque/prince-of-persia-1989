@@ -54,7 +54,14 @@
     <ClCompile Include="TileMap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="dll\fmod.dll" />
+    <None Include="dll\fmodL.dll" />
+    <None Include="dll\freeglut.dll" />
+    <None Include="dll\glew32.dll" />
     <None Include="zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\Simple OpenGL Image Library\projects\VC9\Debug\SOIL.lib" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}</ProjectGuid>
@@ -103,12 +110,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\lib\freetype-2.3.5-1-bin\include\freetype2;.\lib\freeglut\include;.\lib\glew-1.13.0\include;.\lib\glm;.\lib\freetype-2.3.5-1-bin\include;.\lib\Simple OpenGL Image Library\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\lib\freetype-2.3.5-1-bin\include\freetype2;.\lib\freeglut\include;.\lib\glew-1.13.0\include;.\lib\glm;.\lib\freetype-2.3.5-1-bin\include;.\lib\Simple OpenGL Image Library\src;.\lib;.\lib\glew-1.13.0\lib\Release\Win32;.\dll;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>.\lib\freetype-2.3.5-1-bin\lib;.\lib\Simple OpenGL Image Library\projects\VC9\Debug;.\lib\freeglut\lib;.\lib\glew-1.13.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\lib\freetype-2.3.5-1-bin\lib;.\lib\Simple OpenGL Image Library\projects\VC9\Debug;.\lib\freeglut\lib;.\lib\glew-1.13.0\lib\Release\Win32;.\lib;.\lib\glew-1.13.0\bin\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>lib/fmodL_vc.lib;;SOIL.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
